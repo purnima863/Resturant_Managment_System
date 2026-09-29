@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+.body{
+    background: #f7f7f7;
+    color: #222;
+}
+/*slider*/
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background: #1d1d1d;
+    padding: 30px 18px;
+}
