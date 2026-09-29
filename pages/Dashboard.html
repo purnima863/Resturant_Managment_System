@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Dashboard</title>
+</head>
+<body>
+    <!--sidebar-->
+    <aside class="sidebar">
+    
+            <h2>🍴 Foodie</h2>
+        
+            
+                <a href="#" class="active ">🏠Dashboard</a>
+                <a href="#menu">📋 Menu</a>
+                <a href="#orders">📦 My Orders</a>
+                <a href="#profile">👤 Profile</a>
+                <a href="#logout">🚪 Logout</a>
+            
+       
+    </aside>
+    <main class="main-content">
+        <h1>Welcome to the Customer Dashboard</h1>
+        <p>Welcome back, [Customer Name]!</p>
+        <img src="../assests/images-converted-from-jpg.webp" alt="Teasty Food">
+        </main>
+        <section id="categorys">
+            <h2>category</h2>
+            <p>Explore our delicious menu items.</p>
+            <div class="category-container">
+        <div class="category-card">
+            <div class="category-icon">🍕</div>
+            <h3>Pizza</h3>
+          
+        </div>
+
+        <div class="category-card">
+            <div class="category-icon">🍔</div>
+            <h3>Burgers</h3>
+            
+        </div>
+
+        <div class="category-card">
+            <div class="category-icon">🍜</div>
+            <h3>Noodles</h3>
+            
+        </div>
+
+        <div class="category-card">
+            <div class="category-icon">🍛</div>
+            <h3>Indian</h3>
+            
+        </div>
+
+        <div class="category-card">
+            <div class="category-icon">🍰</div>
+            <h3>Desserts</h3>
+            
+        </div>
+
+        <div class="category-card">
+            <div class="category-icon">🥤</div>
+            <h3>Drinks</h3>
+            
+        </div>
+        <!--menu -->
+        <section id="menu">
+            <div>
+            <h2>Popular menu items</h2>
+            <span>View All →</span>
+          </div>
+          <div class="food-container">
+         
+          <div class="food-card">
+              <img src="../assests/burger-converted-from-jpg.webp" alt="Burger">
+
+          <div class="food-information">
+            <h3>Cheeseburger</h3>
+            <p>A classic cheeseburger with all the fixings.</p>
+          
+          <div class="food-bottom">
+            <strong>₹199</strong>
+            <button onclick="addToCart('cheeseburger',199)">+Add</button>
+          </div>
+          </div>
+          </div>
+          <div class="food-card">
+            <img src="../assests/pizza-converted-from-jpg.webp" alt="Pizza">
+                <div class="food-information">
+                <h3>Cheese Pizza</h3>
+                <p>A simple and delicious pizza with fresh ingredients.</p>
+          
+               <div class="food-bottom">
+            <strong>₹299</strong>
+            <button onclick="addToCart('cheese-pizza',299)">+Add</button>
+          </div>
+          </div>
+          </div>
+          <div class="food-card">
+            <img src="../assests/noodle.jpg" alt="Noodles">
+                <div class="food-information">
+                <h3>Vegetable Noodles</h3>
+                <p>A tasty and healthy dish with fresh vegetables.</p>
+          
+               <div class="food-bottom">
+            <strong>₹199</strong>
+            <button onclick="addToCart('vegetable-noodles',199)">+Add</button>
+          </div>
+          </div>
+          </div>
+          <div class="food-card">
+           <img src="../assests/manchurian-converted-from-jpg.webp" alt="Indian">
+                <div class="food-information">
+                <h3>Manchurian</h3>
+                <p>A rich and aromatic Indian dish.</p>
+          
+               <div class="food-bottom">
+               <strong>₹149</strong>
+               <button onclick="addToCart('manchurian',149)">+Add</button>
+          </div>
+          </div>
+          </div>
+        </div>
+        </section>
+        <section class="cart">
+            <h2>🛒 My Cart</h2>
+            <div id="cartltems">
+                <p class="empty">Your cart is empty.</p>
+            </div>
+            <div class="cart-total">
+                <strong>Total: ₹<span id="cart-total">0</span></strong>
+                
+                <button id="checkout-button" onclick="checkout()">Checkout</button>
+
+            </div>
+        </section>
+            
+            
+            <!--orders-->
+        <section id="orders">
+            <h2>📦 My Orders</h2>
+            <div class="Order-card">
+                <strong>Order #12345</strong>
+                <p>cheeseburger x 1</p>
+                </div>
+                <span class="order-status">Status: Delivered</span>
+
+                
+
+            </div>
+            
+            
+        </section>
+        <section id="profile" class="profile">
+            <h2>👤 My Profile</h2>
+            <div class="profile-card">
+                <strong>Name: Purnima</strong>
+                <p><strong>Email:</strong> purnima@example.com</p>
+                <p><strong>Phone:</strong> +91 xxxxxxxxxx</p>
+            <!-- Add profile management options here -->
+        </section>
+</body>
+    

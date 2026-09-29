@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+ 
+  <link rel="stylesheet" href="../css/style1.css">
+</head>
+<body class="login-page">
+  
+  <div class="container">
+    <div class="form-container">
+      <div class="form-blob" aria-hidden="true">
+        
+      </div>
+      <div class="form-header">
+        <p>Please enter your details</p>
+        <h1>Welcome to My Restaurant</h1>
+      </div>
+
+      <form class="form-box" onsubmit="event.preventDefault();">
+      
+      <div class="input-group">
+       
+        <input type="email" id="email" class="input-field" placeholder=" " required>
+        <label for="email" class="floating-label">Email address</label>
+      </div>
+      
+      <!-- Password Group -->
+      <div class="input-group">
+        <input type="password" id="password" class="input-field" placeholder=" " required>
+        <label for="password" class="floating-label">Password</label>
+        <div class="eye-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+      </div>
+
+      <!-- Remember Me & Forgot Password -->
+      <div class="checkbox-group">
+        <div class="form-col remember-me">
+          <input type="checkbox" id="remember-me-checkbox" class="checkbox-field">
+          <label for="remember-me-checkbox">Remember me</label>
+        </div>
+        <div class="form-col">
+          <a href="forget-password">Forgot password?</a>
+        </div>
+      </div>
+
+      <!-- Sign In Button -->
+      <button type="submit" class="form-btn form-btn-submit">Sign In</button>
+      <div class="form-divider"><span>OR</span></div>
+      <div class="social" aria-label="Social sign in options">
+        <a href="https://accounts.google.com" target="_blank" rel="noopener noreferrer" aria-label="Continue with Google" title="Continue with Google">
+          <i class="fa-brands fa-google"></i>
+        </a>
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Continue with Facebook" title="Continue with Facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://appleid.apple.com" target="_blank" rel="noopener noreferrer" aria-label="Continue with Apple" title="Continue with Apple">
+          <i class="fa-brands fa-apple"></i>
+        </a>
+      </div>
+
+      <!-- Footer Links -->
+      <div class="form-footer">
+        <p>Don't have an account?
+         <a  href="signup.html">Sign Up</a>
+      </div>
+      </form>
+    </div>
+
+  </div>
+</body>
+</html>
